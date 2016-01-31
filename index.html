@@ -1,0 +1,58 @@
+<!DOCTYPE HTML5>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+
+  <title>M-PORT</title>
+
+  <!-- loading files -->
+  <link href="file/css/main.css" rel="stylesheet">
+  <link href="file/css/jquery.sidr.dark.css" type="text/css">
+  <script type="text/javascript" src="file/js/main.js"></script>
+  <script type="text/javascript" src="file/js/jquery.sidr.min.js"></script>
+
+ </head>
+
+ <body>
+   
+   <img src="file/image/toggle.svg" class="button" id="simple-menu-button" onClick="$.sidr();">
+   
+   <nav id="sidr">
+   <br>
+   <h3>MENU</h3><img src="file/image/toggle.svg" class="button" href="javascript:void(0)" onClick="changecss('');">
+    <h3>
+    <div href="news.html" margin="20px">おしらせ</div>
+    <li><a href="chedule.html">カレンダー</a></li>
+    <li><a href="class.html">授業情報</a></li>
+    <li><a href="timetable.html">バス</a></li>
+    </h3>
+   </nav>
+
+   
+  <div id="icon">
+   <div align="center">
+  　<p  id="menu">MENU</p>
+   </div>
+  </div>
+  <table>
+   <tr>
+   <th><a href="news.html"><img src="file/image/おしらせ.svg" id="pad"></a></th>
+   <th><a href="schedule.html"><img src="file/image/カレンダー.svg" id="pad"></a></th>
+   </tr>
+   <tr>
+   <th>おしらせ</th>
+   <th>カレンダー</th>
+   </tr>
+   <tr>
+   <th><a href="class.html"><img src="file/image/授業.svg" id="pad"></a></th>
+   <th><a href="timetable.html"><img src="file/image/バス.svg" id="pad"></a></th>
+   </tr>
+   <tr>
+   <th>授業情報</th>
+   <th>バス</th>
+   </tr>
+   </table>
+
+   
+
+ </body>

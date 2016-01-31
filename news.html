@@ -1,0 +1,53 @@
+<!DOCTYPE HTML5>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+
+  <title>M-PORT</title>
+
+  <!-- loading files -->
+  <link href="file/css/main.css" rel="stylesheet">
+  <script type="text/javascript" src="file/js/main.js"></script>
+  <style>
+   </style>
+
+ </head>
+
+ <body>
+ <input type="checkbox" name="支援課" value="支援課" class=size onchange="tblfilter('news',value);">支援課</input><br>
+  <select onchange="tblfilter('news',this.options[this.selectedIndex].value);">
+<option value="">すべて</option>
+<option value="支援課">支援課</option>
+<option value="教務課">教務課</option>
+<option value="キャリアセンター">キャリアセンター</option>
+</select>
+
+   <table class=size id="news">
+   <tr title="支援課" class="linkblock" href="index.html">
+    <td><a href="index.html">その1</td>
+    <td>支援課</a></td>
+   </tr>
+   <tr title="教務課" class="linkblock">
+    <td><a href="index.html">その2</td>
+    <td>教務課</a></td>
+   </tr>
+   <tr title="支援課" class="linkblock">
+    <td><a href="index.html">その3</td>
+    <td>支援課</a></td>
+   </tr>
+   <tr title="支援課" class="linkblock">
+    <td><a href="index.html">その4</td>
+    <td>支援課</a></td>
+   </tr>
+   <tr title="支援課" class="linkblock">
+    <td><a href="index.html">その5</td>
+    <td>支援課</a></td>
+   </tr>
+   <tr title="キャリアセンター" class="linkblock">
+    <td><a href="index.html">その6</td>
+    <td>キャリアセンター</a></td>
+   </tr>
+   
+   </table>
+
+ </body>
