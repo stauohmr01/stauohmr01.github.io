@@ -1,17 +1,394 @@
-<!DOCTYPE HTML5>
-<html lang="ja">
- <head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>M-PORT</title>
+    <title>M-PORT</title>
 
-  <!-- loading files -->
-  <link href="file/css/main.css" rel="stylesheet">
-  <script type="text/javascript" src="file/js/main.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
- </head>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
 
- <body>
-  <footer>
-  </footer>
- </body>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" class="back">
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">M-PORT</a></h1>
+			<i class="fa fa-times menu-close"></i>
+			<a href="news.html" class="smoothScroll">おしらせ</a>
+			<a href="class.html" class="smoothScroll">授業</a>
+			<a href="schedule.html" class="smoothScroll">カレンダー</a>
+			<a href="timetable.html" class="smoothScroll">バス時刻表</a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><img src="assets/img/toggle.svg"></img></div>
+	</nav>
+
+	<div id="icon">
+  	 <div align="center">
+  　		<p id="menu">バス発車まで</p>
+  	 </div>
+  	</div>
+<article id=wakayama-1 style="display: table;">
+	<h3>和歌山ライン<br>南海和歌山駅～大学間</h3>
+	<p id="waka1"></p>
+	<table class="list">
+		<tr><td>7:50</td><td>大学行き</td><tr>
+		<tr><td>9:50</td><td>大学行き</td><tr>
+		<tr><td>11:40</td><td>大学行き</td><tr>
+		<tr><td>12:50</td><td>和歌山駅行き</td><tr>
+		<tr><td>15:20</td><td>和歌山駅行き</td><tr>
+		<tr><td>16:50</td><td>和歌山駅行き</td><tr>
+		<tr><td>18:20</td><td>和歌山駅行き</td><tr>
+		<tr><td>20:00</td><td>和歌山駅行き</td><tr>
+	</table>
+</article>
+<article id=wakayama-2 style="display: none;">
+	<h3>和歌山ライン<br>JR和歌山駅～大学間</h3>
+	<p id="waka2"></p>
+	<table class="list">
+		<tr><td>7:50</td><td>大学行き</td><tr>
+		<tr><td>8:00</td><td>大学行き</td><tr>
+		<tr><td>10:00</td><td>大学行き</td><tr>
+		<tr><td>11:50</td><td>大学行き</td><tr>
+		<tr><td>12:50</td><td>和歌山駅行き</td><tr>
+		<tr><td>15:20</td><td>和歌山駅行き</td><tr>
+		<tr><td>16:50</td><td>和歌山駅行き</td><tr>
+		<tr><td>18:20</td><td>和歌山駅行き</td><tr>
+		<tr><td>20:00</td><td>和歌山駅行き</td><tr>
+	</table>
+</article>
+<article id=tonda-1 style="display: none;">
+	<h3>富田林・金剛ライン<br>富田林駅～大学間</h3>
+	<p id="ton1"></p>
+	<table class="list">
+	<tr><td>8:10</td><td>大学行き</td><tr>
+	<tr><td>9:50</td><td>大学行き</td><tr>
+	<tr><td>11:50</td><td>大学行き</td><tr>
+	<tr><td>13:50</td><td>大学行き</td><tr>
+	<tr><td>12:50</td><td>富田林駅行き</td><tr>
+	<tr><td>15:10</td><td>富田林駅行き</td><tr>
+	<tr><td>16:50</td><td>富田林駅行き</td><tr>
+	<tr><td>18:30</td><td>富田林駅行き</td><tr>
+	<tr><td>20:10</td><td>富田林駅行き</td><tr>
+	</table>
+</article>
+<article id=tonda-2 style="display: none;">
+	<h3>富田林・金剛ライン<br>金剛駅～大学間</h3>
+	<p id="ton2"></p>
+	<table class="list">
+	<tr><td>8:10</td><td>大学行き</td><tr>
+	<tr><td>9:50</td><td>大学行き</td><tr>
+	<tr><td>11:50</td><td>大学行き</td><tr>
+	<tr><td>13:50</td><td>大学行き</td><tr>
+	</table>
+</article>
+<article id=otsu-1 style="display: none;">
+	<h3>泉大津・和泉府中ライン<br>泉大津駅～大学間</h3>
+	<p id="otsu1"></p>
+</article>
+<article id=otsu-2 style="display: none;">
+	<h3>泉大津・和泉府中ライン<br>和泉府中駅～大学間</h3>
+	<p id="otsu2"></p>
+</article>
+<article id=chu-1 style="display: none;">
+	<h3>和泉中央ライン<br>和泉中央駅～大学間</h3>
+	<p id="chu"></p>
+</article>
+<table class=buslink>
+<tr id="wakayama" style="display: table;">
+<td onClick="link(5)">南海和歌山駅</td>
+<td onClick="link(6)">JR和歌山駅　</td>
+</tr>
+<tr id="tonda" style="display: none;">
+<td onClick="link(7)">富田林駅</td>
+<td onClick="link(8)">金剛駅　</td>
+</tr>
+<tr id="otsu" style="display: none;">
+<td onClick="link(9)">和泉府中</td>
+<td onClick="link(10)">泉大津　</td>
+</tr>
+</table>
+<table class=buslink>
+<tr>
+<td width="25%" onClick="link(1)">和歌山</td>
+<td width="25%" onClick="link(2)">富田林<br>金剛</td>
+<td width="25%" onClick="link(3)">泉大津<br>和泉府中</td>
+<td width="25%" onClick="link(4)">和泉中央<td>
+</tr>
+</table>
+  	<script type="text/javascript">
+  		function set2fig(num) {
+      		var ret;
+   			if( num < 10 ) { ret = "0" + num; }
+   			else { ret = num; }
+   			return ret;
+		}
+		function cdtw1(){var nowTime = new Date();
+			var nowtime = nowTime.getHours()*3600 + nowTime.getMinutes()*60 + nowTime.getSeconds();
+			var n = [28200,35400,42000,46200,55200,60600,66100,72100];
+			for(var i = 0; i < n.length; i++) {
+				if(nowtime < n[i]) {
+					goaltime = n[i];
+					break;
+					}
+			}
+			var time=goaltime-nowtime;
+			var H=Math.floor(time/3600);
+			var M=set2fig(Math.floor((time-H*3600)/60));
+			var S=set2fig(time-(H*3600+M*60));
+			var msg =H + "h" + M + "m" + S + "s";
+			document.getElementById("waka1").innerHTML = msg;
+		}
+		setInterval('cdtw1()',1000);
+		function cdtw2(){var nowTime = new Date();
+			var nowtime = nowTime.getHours()*3600 + nowTime.getMinutes()*60 + nowTime.getSeconds();
+			var n = [28200,28800,36000,42600,46200,55200,60600,66100,72100];
+			for(var i = 0; i < n.length; i++) {
+				if(nowtime < n[i]) {
+					goaltime = n[i];
+					break;
+					}
+			}
+			var time=goaltime-nowtime;
+			var H=Math.floor(time/3600);
+			var M=set2fig(Math.floor((time-H*3600)/60));
+			var S=set2fig(time-(H*3600+M*60));
+			var msg =H + "h" + M + "m" + S + "s";
+			document.getElementById("waka2").innerHTML = msg;
+		}
+		setInterval('cdtw2()',1000);
+		function cdtt1(){var nowTime = new Date();
+			var nowtime = nowTime.getHours()*3600 + nowTime.getMinutes()*60 + nowTime.getSeconds();
+			var n = [3600,7200,10800,14400,18000,21600,25200,28800,32400,36000,39600,43200,46800,50400,54000,57600,61200,64800,68400];
+			for(var i = 0; i < n.length; i++) {
+				if(nowtime < n[i]) {
+					goaltime = n[i];
+					break;
+					}
+			}
+			var time=goaltime-nowtime;
+			var H=Math.floor(time/3600);
+			var M=set2fig(Math.floor((time-H*3600)/60));
+			var S=set2fig(time-(H*3600+M*60));
+			var msg =H + "h" + M + "m" + S + "s";
+			document.getElementById("ton1").innerHTML = msg;
+		}
+		setInterval('cdtt1()',1000);
+		function cdtt2(){var nowTime = new Date();
+			var nowtime = nowTime.getHours()*3600 + nowTime.getMinutes()*60 + nowTime.getSeconds();
+			var n = [3600,7200,10800,14400,18000,21600,25200,28800,32400,36000,39600,43200,46800,50400,54000,57600,61200,64800,68400];
+			for(var i = 0; i < n.length; i++) {
+				if(nowtime < n[i]) {
+					goaltime = n[i];
+					break;
+					}
+			}
+			var time=goaltime-nowtime;
+			var H=Math.floor(time/3600);
+			var M=set2fig(Math.floor((time-H*3600)/60));
+			var S=set2fig(time-(H*3600+M*60));
+			var msg =H + "h" + M + "m" + S + "s";
+			document.getElementById("ton2").innerHTML = msg;
+		}
+		setInterval('cdtt2()',1000);
+		function cdto1(){var nowTime = new Date();
+			var nowtime = nowTime.getHours()*3600 + nowTime.getMinutes()*60 + nowTime.getSeconds();
+			var n = [3600,7200,10800,14400,18000,21600,25200,28800,32400,36000,39600,43200,46800,50400,54000,57600,61200,64800,68400];
+			for(var i = 0; i < n.length; i++) {
+				if(nowtime < n[i]) {
+					goaltime = n[i];
+					break;
+					}
+			}
+			var time=goaltime-nowtime;
+			var H=Math.floor(time/3600);
+			var M=set2fig(Math.floor((time-H*3600)/60));
+			var S=set2fig(time-(H*3600+M*60));
+			var msg =H + "h" + M + "m" + S + "s";
+			document.getElementById("otsu1").innerHTML = msg;
+		}
+		setInterval('cdto1()',1000);
+		function cdto2(){var nowTime = new Date();
+			var nowtime = nowTime.getHours()*3600 + nowTime.getMinutes()*60 + nowTime.getSeconds();
+			var n = [3600,7200,10800,14400,18000,21600,25200,28800,32400,36000,39600,43200,46800,50400,54000,57600,61200,64800,68400];
+			for(var i = 0; i < n.length; i++) {
+				if(nowtime < n[i]) {
+					goaltime = n[i];
+					break;
+					}
+			}
+			var time=goaltime-nowtime;
+			var H=Math.floor(time/3600);
+			var M=set2fig(Math.floor((time-H*3600)/60));
+			var S=set2fig(time-(H*3600+M*60));
+			var msg =H + "h" + M + "m" + S + "s";
+			document.getElementById("otsu2").innerHTML = msg;
+		}
+		setInterval('cdto2()',1000);
+		function cdtchu(){var nowTime = new Date();
+			var nowtime = nowTime.getHours()*3600 + nowTime.getMinutes()*60 + nowTime.getSeconds();
+			var n = [3600,7200,10800,14400,18000,21600,25200,28800,32400,36000,39600,43200,46800,50400,54000,57600,61200,64800,68400];
+			for(var i = 0; i < n.length; i++) {
+				if(nowtime < n[i]) {
+					goaltime = n[i];
+					break;
+					}
+			}
+			var time=goaltime-nowtime;
+			var H=Math.floor(time/3600);
+			var M=set2fig(Math.floor((time-H*3600)/60));
+			var S=set2fig(time-(H*3600+M*60));
+			var msg =H + "h" + M + "m" + S + "s";
+			document.getElementById("chu").innerHTML = msg;
+		}
+		setInterval('cdtchu()',1000);
+		function link(num){
+			switch(num){
+				case 1:
+				document.getElementById("wakayama-1").style.display="table";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="none";
+				document.getElementById("wakayama").style.display="table";
+				document.getElementById("tonda").style.display="none";
+				document.getElementById("otsu").style.display="none";
+				document.getElementById("chu-1").style.display="none";
+				break;
+				case 2:
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="table";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="none";
+				document.getElementById("wakayama").style.display="none";
+				document.getElementById("tonda").style.display="table";
+				document.getElementById("otsu").style.display="none";
+				document.getElementById("chu-1").style.display="none";
+				break;
+				case 3:
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="table";
+				document.getElementById("otsu-2").style.display="none";
+				document.getElementById("wakayama").style.display="none";
+				document.getElementById("tonda").style.display="none";
+				document.getElementById("otsu").style.display="table";
+				document.getElementById("chu-1").style.display="none";
+				break;
+				case 4:
+				document.getElementById("wakayama").style.display="none";
+				document.getElementById("tonda").style.display="none";
+				document.getElementById("otsu").style.display="none";
+				document.getElementById("chu-1").style.display="table";
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="none";
+				break;
+				case 5:
+				document.getElementById("wakayama-1").style.display="table";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="none";
+				break;
+				case 6:
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="table";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="none";
+				break;
+				case 7:
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="table";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="none";
+				break;
+				case 8:
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="table";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="none";
+				break;
+				case 9:
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="table";
+				document.getElementById("otsu-2").style.display="none";
+				break;
+				case 10:
+				document.getElementById("wakayama-1").style.display="none";
+				document.getElementById("wakayama-2").style.display="none";
+				document.getElementById("tonda-1").style.display="none";
+				document.getElementById("tonda-2").style.display="none";
+				document.getElementById("otsu-1").style.display="none";
+				document.getElementById("otsu-2").style.display="table";
+				break;
+			}
+		}
+	</script>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
+	<script src="assets/js/main.js"></script>
+		<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		</script>
+		
+		<script type="text/javascript">
+      $(function() {
+        //    fancybox
+          jQuery(".fancybox").fancybox();
+      });
+	   </script>
+  </body>
+</html>

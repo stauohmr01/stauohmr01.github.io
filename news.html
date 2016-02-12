@@ -1,53 +1,115 @@
-<!DOCTYPE HTML5>
-<html lang="ja">
- <head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>M-PORT</title>
+    <title>M-PORT</title>
 
-  <!-- loading files -->
-  <link href="file/css/main.css" rel="stylesheet">
-  <script type="text/javascript" src="file/js/main.js"></script>
-  <style>
-   </style>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
- </head>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
 
- <body>
- <input type="checkbox" name="支援課" value="支援課" class=size onchange="tblfilter('news',value);">支援課</input><br>
-  <select onchange="tblfilter('news',this.options[this.selectedIndex].value);">
-<option value="">すべて</option>
-<option value="支援課">支援課</option>
-<option value="教務課">教務課</option>
-<option value="キャリアセンター">キャリアセンター</option>
-</select>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-   <table class=size id="news">
-   <tr title="支援課" class="linkblock" href="index.html">
-    <td><a href="index.html">その1</td>
-    <td>支援課</a></td>
-   </tr>
-   <tr title="教務課" class="linkblock">
-    <td><a href="index.html">その2</td>
-    <td>教務課</a></td>
-   </tr>
-   <tr title="支援課" class="linkblock">
-    <td><a href="index.html">その3</td>
-    <td>支援課</a></td>
-   </tr>
-   <tr title="支援課" class="linkblock">
-    <td><a href="index.html">その4</td>
-    <td>支援課</a></td>
-   </tr>
-   <tr title="支援課" class="linkblock">
-    <td><a href="index.html">その5</td>
-    <td>支援課</a></td>
-   </tr>
-   <tr title="キャリアセンター" class="linkblock">
-    <td><a href="index.html">その6</td>
-    <td>キャリアセンター</a></td>
-   </tr>
-   
-   </table>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
- </body>
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" class="back">
+		
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">M-PORT</a></h1>
+			<i class="fa fa-times menu-close"></i>
+			<a href="news.html" class="smoothScroll">おしらせ</a>
+			<a href="class.html" class="smoothScroll">授業</a>
+			<a href="schedule.html" class="smoothScroll">カレンダー</a>
+			<a href="timetable.html" class="smoothScroll">バス時刻表</a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><img src="assets/img/toggle.svg"></img></div>
+	</nav>
+
+	<div id="icon">
+  	 <div align="center">
+  　		<p id="menu">おしらせ</p>
+  	 </div>
+  	</div>
+  	<table class="newscmd">
+  	<td class="newsc">すべて</td><td class="newsc">既読</td><td class="newsc">未読</td><td class="newsc">アーカイブ</td>
+  	<td width="20%"><img src="assets/img/search.svg" width="30%"></td>
+  	</table>
+  	<table class="newstbl">
+  	<tr class="newstr"><td width="900vw"></td></tr>
+  	</table>
+  	<table class="newstbl">
+  	<tr class="newstr">
+  		<td width="12%">from<br><br>　<input type="checkbox"></td>
+  		<td width="73%"><a href="mail.html">教務課<br>2016年度　授業時間割表の訂正について</a></td>
+  		<td  width="5%"><br><img src="assets/img/clip.svg" width=100%></td>
+  	</tr>
+  	<tr class="newstr">
+  		<td width="12%">from<br><br>　<input type="checkbox"></td>
+  		<td width="73%">PEACH<br>サンプル</td>
+  		<td  width="5%"></td>
+  	</tr>
+  	<tr class="newstr">
+  		<td width="12%">from<br><br>　<input type="checkbox"></td>
+  		<td width="73%">PEACH<br>サンプル</td>
+  		<td  width="5%"></td>
+  	</tr>
+  	<tr class="newstr">
+  		<td width="12%">from<br><br>　<input type="checkbox"></td>
+  		<td width="73%">PEACH<br>サンプル</td>
+  		<td  width="5%"><br><img src="assets/img/clip.svg" width=100%></td>
+  	</tr>
+  	<tr class="newstr">
+  		<td width="12%">from<br><br>　<input type="checkbox"></td>
+  		<td width="73%">PEACH<br>サンプル</td>
+  		<td  width="5%"></td>
+  	</tr>
+  	</table>
+	
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
+	<script src="assets/js/main.js"></script>
+		<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		</script>
+		
+		<script type="text/javascript">
+      $(function() {
+        //    fancybox
+          jQuery(".fancybox").fancybox();
+      });
+	   </script>
+
+  </body>
+</html>

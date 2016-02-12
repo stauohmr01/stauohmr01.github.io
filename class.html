@@ -1,18 +1,142 @@
-<!DOCTYPE HTML5>
-<html lang="ja">
- <head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>M-PORT</title>
+    <title>M-PORT</title>
 
-  <!-- loading files -->
-  <link href="file/css/main.css" rel="stylesheet">
-  <script type="text/javascript" src="file/js/main.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
- </head>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
 
- <body>
-  <img src="file/image/工事中.jpg" id=icon1 width=100% height=auto>
-   
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
- </body>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" class="back">
+		
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">M-PORT</a></h1>
+			<i class="fa fa-times menu-close"></i>
+			<a href="news.html" class="smoothScroll">おしらせ</a>
+			<a href="class.html" class="smoothScroll">授業</a>
+			<a href="schedule.html" class="smoothScroll">カレンダー</a>
+			<a href="timetable.html" class="smoothScroll">バス時刻表</a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><img src="assets/img/toggle.svg"></img></div>
+	</nav>
+
+	<div id="icon">
+  	 <div align="center">
+  　		<p id="menu">授業</p>
+  	 </div>
+  	</div>
+  	<table class="classcmd">
+  	<tr><td></td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td><td>日</td></tr>
+  	<tr>
+  		<td>1限</td>
+  		<td><a href="readme.html">経営学<br>1-210</a></td>
+  		<td></td>
+  		<td></td>
+  		<td></td>
+  		<td></td>
+  		<td></td>
+  		<td></td>
+  	</tr>
+	<tr>
+		<td>2限</td>
+		<td></td>
+		<td><a href="readme.html">英語A<br>3-304</a></td>
+		<td></td>
+		<td><a href="readme.html">世界市民<br>2-202</a></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>3限</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>4限</td>
+		<td></td>
+		<td></td>
+		<td><a href="readme.html">歴史学<br>T-001</a></td>
+		<td></td>
+		<td><a href="readme.html">演習3<br>1-305</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>5限</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>6限</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	</table>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/fancybox/jquery.fancybox.js"></script>    
+	<script src="assets/js/main.js"></script>
+		<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		</script>
+		
+		<script type="text/javascript">
+      $(function() {
+        //    fancybox
+          jQuery(".fancybox").fancybox();
+      });
+	   </script>
+
+  </body>
+</html>
